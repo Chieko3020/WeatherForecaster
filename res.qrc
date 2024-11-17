@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>res/icon.ico</file>
+        <file>res/bg.png</file>
+        <file>res/bg2.jpg</file>
+        <file>res/chart-line.png</file>
+        <file>res/exit.png</file>
+        <file>res/history.png</file>
+        <file>res/query.png</file>
+        <file>res/delete.png</file>
+        <file>res/exit2.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>History</class>
+ <widget class="QWidget" name="History">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>History</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: transparent;
+font: 700 8pt &quot;Microsoft YaHei UI&quot;;
+
+
+
+
+
+</string>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="cornerButtonEnabled">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>92</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>13</number>
+   </attribute>
+   <attribute name="verticalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>550</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+image: url(:/new/prefix1/res/delete.png);
+background-color:transparent;
+border:none
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>550</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+image: url(:/new/prefix1/res/exit2.png);
+background-color:transparent;
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="searchEdit">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>565</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Microsoft YaHei UI&quot;;
+background-color: rgb(255, 247, 228);</string>
+   </property>
+   <property name="maxLength">
+    <number>50</number>
+   </property>
+   <property name="placeholderText">
+    <string>搜索...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="searchColumnComboBox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>565</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Microsoft YaHei UI&quot;;</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>background</zorder>
+  <zorder>deleteButton</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>tableView</zorder>
+  <zorder>searchEdit</zorder>
+  <zorder>searchColumnComboBox</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

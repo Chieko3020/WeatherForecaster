@@ -1,0 +1,11 @@
+{
+    "files": [
+        "mainwindow.py",
+        "mainwindow.ui",
+        "history.ui",
+        "history.py",
+        "res.qrc",
+        "chart.py",
+        "chart.ui"
+    ]
+}
